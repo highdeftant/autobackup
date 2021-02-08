@@ -7,7 +7,7 @@ DATE=$(date +%b-%d-%y)
 SRCDIR=/home/gh0st/
 DESTUSB=/media/gh0st/backupdr/os_backup
 
-echo $DATE
+echo $DATE "||" $TIME
 echo "Starting Backup...."
 sudo rsync -av --delete $SRCDIR $DESTUSB
 echo "Backup Completed at $TIME"
