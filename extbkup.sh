@@ -2,7 +2,7 @@
 
 # Backup OS to Ext. HDD
 
-TIME=$(date +%H:%M:%S)
+TIME=$(date +%H:%M)
 DATE=$(date +%b-%d-%y)
 SRCDIR=/home/gh0st/
 DESTUSB=/media/gh0st/backupdr/os_backup
