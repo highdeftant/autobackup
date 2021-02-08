@@ -7,8 +7,10 @@ DATE=$(date +%b-%d-%y)
 SRCDIR=/home/gh0st/
 DESTUSB=/media/gh0st/backupdr/os_backup
 
-echo $DATE "||" $TIME
-echo "Starting Backup...."
+
+echo "|  Backing Up OS..  |"
+echo "|" $DATE "@" $TIME "|"
+sudo rm -r /.cache/mozilla/*
 sudo rsync -av --delete $SRCDIR $DESTUSB
 echo "Backup Completed at $TIME"
 exit
