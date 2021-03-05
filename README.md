@@ -1,3 +1,5 @@
 # autobackup
-Backup entire OS to HDD, This will be updated to include folder choice options
-Currently this syncs files pointing to my external directory, however you can edit this to point to wherever you'd like.
+Backup your OS, this should be run in crontab but you can do whatever.
+
+# Update
+- I turned this into a function for no reason other than ease of use, and added a nice little updater for your system. Cute! lol
