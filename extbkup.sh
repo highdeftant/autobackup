@@ -5,7 +5,7 @@
 TIME=$(date +%H:%M)
 DATE=$(date +%b-%d-%y)
 SRCDIR=/home/gh0st/
-DESTUSB=/media/gh0st/backupdr/os_backup
+DESTUSB=/media/*/backupdr/os_backup
 
 
 echo "|  Backing Up OS..  |"
