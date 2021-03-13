@@ -4,8 +4,8 @@
 
 DATE=$(date +%b-%d-%y)
 TIME=$(date +%H:%M:%S)
-SRCDIR=/home/gh0st/
-DESTUSB=/media/gh0st/backupdr/os_backup
+SRCDIR=/home/$USER/
+DESTUSB=/media/$USER/backupdr/os_backup
 
 function backupos() {
 	echo $DATE
