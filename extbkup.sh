@@ -7,9 +7,19 @@ TIME=$(date +%H:%M:%S)
 SRCDIR=/home/$USER/
 DESTUSB=/media/$USER/backupdr/os_backup
 
+function restoreos(){
+	DESTDR=/$HOME/$USER/
+	SRCDR=/media/$USER/*/*
+	echo "Starting Restoration...."
+	sudo rsync -av $SRCDR $DESTDR
+}
+
+
+
 function backupos() {
 	echo $DATE
 	echo "Starting Backup...."
+	rm -r .cache/mozilla/*
 	sudo rsync -av --delete $SRCDIR $DESTUSB
 	echo "Backup Completed at $TIME"
 }
@@ -30,7 +40,6 @@ function updateOS() {
 
 
 backupos
-sleep 3
 echo "-------------------------"
 echo "-------------------------"
 echo "-------------------------"
